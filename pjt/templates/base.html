@@ -40,8 +40,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'reviews:create' %}">추가</a>
                     </li>
-
                 </ul>
+                <form class="d-flex" role="search" action="{% url 'reviews:search' %}">
+                    <input class="form-control me-2" type="search" placeholder="검색어를 입력해주세요." aria-label="Search"
+                        name="search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </nav>
